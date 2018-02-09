@@ -31,11 +31,13 @@ public class Hero extends LivingThing {
             opponent.wounded(damage);
         }
     }
+
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
      * 指定されたダメージを hitPoint から引き、死亡判定を行う。
      * @param damage 受けたダメージ
      */
+
     public void wounded(int damage){
         hitPoint -= damage;
         if( hitPoint < 0 ) {
